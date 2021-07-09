@@ -3,6 +3,10 @@ import os
 from dotenv import load_dotenv
 import logging
 from tqdm import tqdm
+import pandas as pd
+
+pd.set_option('display.max_rows', 4000)
+pd.set_option('display.max_columns', 50)
 
 # 加载用户名和密码环境变量
 load_dotenv()
